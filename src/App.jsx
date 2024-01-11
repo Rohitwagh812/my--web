@@ -13,6 +13,10 @@ import About from './pages/About';
 function App() {
 
   const navigate = useNavigate()
+  const handleDownload = () => {
+    const resumeFilePath = 'path/to/your/resume.pdf';
+    saveAs(resumeFilePath, 'your_resume.pdf');
+  };
 
   return (
     <div style={{height:'100vh', overflow:'hidden'}}>
