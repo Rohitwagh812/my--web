@@ -17,7 +17,7 @@ function Home() {
                </div>
                 <div className='one'>
                 <h3  style={{ fontWeight:'500'}}>I`M ROHIT WAGH</h3>
-                <h5 style={{ marginTop:20 , color:'#616161'}}>Front-End Developer | Web Developer | React Js Developer | Full Stack Development | Software Designer </h5>
+                <h5 style={{ marginTop:20 , color:'#616161'}}>Front-End Developer | Java Software Designer And Developer | React Js Developer | Full Stack Development  </h5>
                 <p style={{
                   width:'89%' ,textAlign:'justify', fontSize:19,color:'#616161', marginTop:25
                 }}>I am a passionate and creative front-end developer with a strong desire to bring digital ideas to life through code. With a focus on user experience and a keen eye for design, I strive to create beautiful and functional web applications that captivate and engage users.
