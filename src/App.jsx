@@ -15,7 +15,7 @@ function App() {
   const navigate = useNavigate()
 
   return (
-    <div >
+    <div style={{height:'100vh', overflow:'hidden'}}>
       <Navbar bg='dark' variant='dark' className='navbar'>
 
         <Navbar.Brand href='/'> 

@@ -6,8 +6,9 @@ import Gif from '../assets/git/Welcome.gif'
 
 function Home() {
   return (
-    <div>
-       <Row>
+    <div >
+       <div>
+       <Row >
             <Col  style={{  paddingLeft:30}}>
                <div  style={{ marginTop:60}}>
                 <span style={{fontSize:'800%'}}>H<span style={{fontSize:'80%'}}>i
@@ -25,6 +26,7 @@ function Home() {
             </Col >
           
         </Row>
+       </div>
          
     </div>
   )

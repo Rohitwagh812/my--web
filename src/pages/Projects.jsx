@@ -19,6 +19,7 @@ function Project() {
   
   return (
     <div style={{ backgroundColor:"#C8E6C9" , backgroundSize:"covar"}}>
+       <div  style={{height:"auto", overflowY:"scroll"}}>
        <h2 style={{ height:50 , display:"flex" ,justifyContent:'center', alignItems:"center" ,color:"#0097A7"}}>My All projects</h2>
         <Row style={{padding:30}}>
           <Col>
@@ -123,6 +124,7 @@ function Project() {
               </Card>
           </Col>
         </Row>
+       </div>
     </div>
   )
 }
