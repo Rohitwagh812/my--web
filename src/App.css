@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Gabarito";
+    user-select: none;
+    
+}
+
+*::after,
+*::before{
+    user-select: none;
+}
+
+
+
+body{
+    /* background-image: url(./assets/2.jpg);
+    background-size: cover; */
+    background-color: #fff;
+    color: #000;
+    height: 100%;
+}
+
+.navbar{
+    padding: 8px;
+    width: 100%;
+    color: #fff;
+}
+
+.navbar span{
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar  .li{
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.navbar  .li:hover{
+    border-bottom: 2px solid ;
+    color: #00ACC1;
+}
+
+.img-div{
+    cursor: pointer;
+}
+
+.row {
+    --bs-gutter-x: 0 !important;
+}
+
+.card::after,
+.card::before
+{
+    
+    height: auto!important;
+}
+
+.card {
+    width: 16rem !important;
+    height: auto!important;
+    width: 16rem !important;
+    text-align: center !important;
+}
+.title{
+    color: #009688;
+}
+
+.two{
+    margin-top: 2rem;
+}
+
+
+
+.sp {
+    background: linear-gradient(
+        90deg,
+        #866ee7,
+        #ea60da,
+        #ed8f57,
+        #fbd41d,
+        #2cca91
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
