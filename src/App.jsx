@@ -16,7 +16,7 @@ function App() {
 
   const navigate = useNavigate()
   const handleDownload = () => {
-    const resumeFilePath = 'src/assets/Resume/file/rohit/ROHIT RESUME.pdf';
+    const resumeFilePath = 'src/Resume/ROHIT RESUME.pdf';
     saveAs(resumeFilePath, 'Rohit_Wagh_resume.pdf');
   };
 
