@@ -7,7 +7,7 @@ import Logoimg from '../src/assets/Logo.png';
 import Home from './pages/Home';
 import Project from './pages/Projects';
 import About from './pages/About';
-// import ResumePdf from '/assets/Resume/file/rohit/Resume.pdf';
+import ResumePdf from '../src/Resume/ROHIT RESUME.pdf';
 
 
 
@@ -16,7 +16,7 @@ function App() {
 
   const navigate = useNavigate()
   const handleDownload = () => {
-    const resumeFilePath = 'src/Resume/ROHIT RESUME.pdf';
+    const resumeFilePath = ResumePdf;
     saveAs(resumeFilePath, 'Rohit_Wagh_resume.pdf');
   };
 
