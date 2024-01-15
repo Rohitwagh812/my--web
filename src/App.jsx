@@ -10,6 +10,8 @@ import About from './pages/About';
 // import ResumePdf from '../src/assets/Resume/ROHIT RESUME.pdf';
 import BackImg from '../src/assets/backdround/backImage.jpg'
 import Services from './pages/Services';
+import UserData from './pages/UserData';
+import Contact from './pages/Contact';
 
 
 
@@ -31,7 +33,8 @@ function App() {
           width="40"
           height="40"
           alt=""
-          src={Logoimg}  />{'              '}
+          src={Logoimg} 
+           onClick={()=>navigate('/user')} />{'              '}
            <span  class="sp" onClick={()=>navigate('/')} style={{marginLeft:10 }}> Mr. Rohit Wagh</span>
         </Navbar.Brand>
 
@@ -39,8 +42,8 @@ function App() {
            <div style={{display:"flex", justifyContent:'space-evenly', width:'30vw', alignItems:'center'}}>
               <div className='li' onClick={()=>navigate('/about')}>about</div>
               <div className='li' onClick={()=> navigate('/sof')} > Services </div>
-              <div className='li' onClick={()=>navigate('/project')}>projects</div>
-              <div className='li'>contact</div>
+              <div className='li' onClick={()=>navigate('/project')}>Projects</div>
+              {/* <div className='li' onClick={()=>navigate('/contact')}>Contact</div> */}
            </div>
         </Navbar.Collapse>
 
@@ -55,6 +58,10 @@ function App() {
          <Route path='/about' element={<About/>}/>
 
          <Route path='/sof' element={<Services/>}/>
+
+         <Route path='/user' element={<UserData/>}/>
+
+         <Route path='/contact' element={<Contact/>}/>
 
       </Routes>
 
