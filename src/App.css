@@ -41,6 +41,7 @@ body{
 .navbar  .li{
     cursor: pointer;
     text-transform: uppercase;
+    margin-left: 5px;
 }
 
 .navbar  .li:hover{

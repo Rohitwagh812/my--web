@@ -37,7 +37,7 @@ function App() {
         <Navbar.Collapse className="justify-content-end">
            <div style={{display:"flex", justifyContent:'space-evenly', width:'30vw', alignItems:'center'}}>
               <div className='li' onClick={()=>navigate('/about')}>about</div>
-              {/* <div className='li' onClick={()=>handleDownload()}>Resume</div> */}
+              <div className='li' > Services </div>
               <div className='li' onClick={()=>navigate('/project')}>projects</div>
               <div className='li'>contact</div>
            </div>

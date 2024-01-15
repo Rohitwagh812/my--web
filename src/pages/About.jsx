@@ -67,11 +67,11 @@ function About() {
                   
                   </h5>
                   <h5>
-                    Languages : English , Hindi
+                    Languages : English, Hindi, Marathi
                   </h5>
                   </div>
                    <div className="b">
-                    <Button style={{marginTop:20}}  onClick={()=>handleDownload()} class="btn btn-light"> Downloads CV </Button>
+                    <Button style={{marginTop:20}}  onClick={()=>handleDownload()} class="btn btn-light"> Downloads My CV </Button>
                    </div>
                  </div>  
               </div>
