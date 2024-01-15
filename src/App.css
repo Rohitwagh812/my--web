@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Open+Sans:wght@400;600;700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -118,3 +120,56 @@ body{
         position: absolute;
         left: 200px;
       } */
+
+
+
+      .my-png-div {
+        width: 190px;
+        height: 254px;
+        border-radius: 30px;
+        background: #e0e0e0;
+        box-shadow: 15px 15px 30px #bebebe,
+                   -15px -15px 30px #ffffff;
+      }
+
+      .gif{
+        mix-blend-mode: multiply;
+      }
+
+      .app{
+        background-image: url('.//assets/backdround/backImage.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+      }
+
+      .card-col{
+        height: 79vh !important;
+        width: 25vw !important;
+        border-radius: 20px;
+        padding: 5px;
+        box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+        background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+      }
+    .card-col-two{
+      height: 70vh !important;
+      width: 23vw !important;
+      /* transform: rotate(-5deg); */
+      background-color: transparent;
+      color: #26A69A;
+     }
+       .my-font-name{
+        font-family: 'Lemon';
+      }
+
+      .card__content {
+        background: rgb(5, 6, 45);
+        border-radius: 17px;
+        width: 100%;
+        height: 100%;
+      }
+
+      h5{
+        color: #87eadf;
+        margin-top: 15px;
+      }

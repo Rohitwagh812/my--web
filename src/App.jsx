@@ -7,21 +7,21 @@ import Logoimg from '../src/assets/Logo.png';
 import Home from './pages/Home';
 import Project from './pages/Projects';
 import About from './pages/About';
-import ResumePdf from '../src/Resume/ROHIT RESUME.pdf';
-
+// import ResumePdf from '../src/assets/Resume/ROHIT RESUME.pdf';
+import BackImg from '../src/assets/backdround/backImage.jpg'
 
 
 
 function App() {
 
   const navigate = useNavigate()
-  const handleDownload = () => {
-    const resumeFilePath = ResumePdf;
-    saveAs(resumeFilePath, 'Rohit_Wagh_resume.pdf');
-  };
+  // const handleDownload = () => {
+  //   const resumeFilePath = ResumePdf;
+  //   saveAs(resumeFilePath, 'Rohit_Wagh_resume.pdf');
+  // };
 
   return (
-    <div style={{height:'100vh', overflow:'hidden'}}>
+    <div className='app' style={{height:'100vh', overflow:'hidden'}}>
       <Navbar bg='dark' variant='dark' className='navbar'>
 
         <Navbar.Brand href='/'> 
@@ -37,7 +37,7 @@ function App() {
         <Navbar.Collapse className="justify-content-end">
            <div style={{display:"flex", justifyContent:'space-evenly', width:'30vw', alignItems:'center'}}>
               <div className='li' onClick={()=>navigate('/about')}>about</div>
-              <div className='li' onClick={()=>handleDownload()}>Resume</div>
+              {/* <div className='li' onClick={()=>handleDownload()}>Resume</div> */}
               <div className='li' onClick={()=>navigate('/project')}>projects</div>
               <div className='li'>contact</div>
            </div>

@@ -16,9 +16,9 @@ import Wordimg from '../assets/Word.png'
 
 function Project() {
 
-  
+  // style={{  backgroundColor:"#C8E6C9" , backgroundSize:"covar"}}
   return (
-    <div style={{  backgroundColor:"#C8E6C9" , backgroundSize:"covar"}}>
+    <div> 
        <div  style={{height:"90vh", overflowY:"scroll" ,scrollbarColor:'none', padding:20}}>
        <h2 style={{ height:50 , display:"flex" ,justifyContent:'center', alignItems:"center" ,color:"#0097A7"}}>My All projects</h2>
         <Row style={{padding:30}}>
