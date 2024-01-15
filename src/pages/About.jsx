@@ -60,7 +60,7 @@ function About() {
                     Phone : 8788357199
                   </h5>
                   <h5>
-                    Experience : No experience
+                    Skill : Java Software Developer
                   </h5>
                   <h5>
                     Education : B.A 
