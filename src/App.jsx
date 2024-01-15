@@ -9,6 +9,7 @@ import Project from './pages/Projects';
 import About from './pages/About';
 // import ResumePdf from '../src/assets/Resume/ROHIT RESUME.pdf';
 import BackImg from '../src/assets/backdround/backImage.jpg'
+import Services from './pages/Services';
 
 
 
@@ -24,20 +25,20 @@ function App() {
     <div className='app' style={{height:'100vh', overflow:'hidden'}}>
       <Navbar bg='dark' variant='dark' className='navbar'>
 
-        <Navbar.Brand href='/'> 
+        <Navbar.Brand style={{cursor:"pointer"}} > 
         <img 
           className="d-inline-block align-center "
           width="40"
           height="40"
           alt=""
           src={Logoimg}  />{'              '}
-           <span  class="sp" style={{marginLeft:10 }}> Mr. Rohit Wagh</span>
+           <span  class="sp" onClick={()=>navigate('/')} style={{marginLeft:10 }}> Mr. Rohit Wagh</span>
         </Navbar.Brand>
 
         <Navbar.Collapse className="justify-content-end">
            <div style={{display:"flex", justifyContent:'space-evenly', width:'30vw', alignItems:'center'}}>
               <div className='li' onClick={()=>navigate('/about')}>about</div>
-              <div className='li' > Services </div>
+              <div className='li' onClick={()=> navigate('/sof')} > Services </div>
               <div className='li' onClick={()=>navigate('/project')}>projects</div>
               <div className='li'>contact</div>
            </div>
@@ -52,6 +53,8 @@ function App() {
          <Route path='/project' element={<Project/>}/>
 
          <Route path='/about' element={<About/>}/>
+
+         <Route path='/sof' element={<Services/>}/>
 
       </Routes>
 
