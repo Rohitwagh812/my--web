@@ -32,35 +32,23 @@ function About() {
      
          
 
-        <Col lg={6} style={{display:"flex", justifyContent:"center"}} >
+        <Col lg={4} style={{display:"flex", justifyContent:"center"}} >
             <div className='card-col-two align-items-start '>
-                  <h2 style={{textAlign:"center"}}>About Me</h2>
+                  <h2 style={{textAlign:"center", width:'50vw'}}>ROHIT WAGH</h2>
 
                  <div>
                   <div style={{marginTop:20, textAlign:"justify"}}>
-                  <h5>
+                  {/* <h5>
                   Name : Rohit Wagh 
-                  </h5>
-                  <h5>
-                    Age : 22
-                  </h5>
+                  </h5> */}
                   <h5>
                     Date Of Birth : 08/01/2002
                   </h5>
                   <h5>
-                    Gender : Male
-                  </h5>
-                  <h5>
                     Location : Jalgaon , Maharasthra
-                  </h5>
-                  <h5 >
-                    Email : rohitwagh480@gmail.com
                   </h5>
                   <h5>
                     Phone : 8788357199
-                  </h5>
-                  <h5>
-                    Skill : Java Software Developer
                   </h5>
                   <h5>
                     Education : B.A 
@@ -77,9 +65,24 @@ function About() {
               </div>
         </Col>
 
-        <Col>
-        <div style={{padding:50}} >
-            <div class="social-card">
+        <Col lg={4}>
+        <div style={{padding:50, color:'#fff'}} >
+                  <h5>
+                    Age : 22
+                  </h5>
+                  <h5>
+                    Gender : Male
+                  </h5>
+                  <h5>
+                    Languages : English, Hindi, Marathi
+                  </h5>
+                  <h5 >
+                    Email : rohitwagh480@gmail.com
+                  </h5>
+                  <h5>
+                    Skill : Java Software Developer
+                  </h5>
+            {/* <div class="social-card">
   <button class="Btn github">
     <span class="svgContainer">
       <svg height="1.6em" viewBox="0 0 496 512" fill="white">
@@ -139,7 +142,7 @@ function About() {
     </span>
     <span class="BG"></span>
   </button>
-            </div>
+            </div> */}
         </div>
         </Col>
       </Row>
