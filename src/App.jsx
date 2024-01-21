@@ -22,6 +22,7 @@ function App() {
   //   const resumeFilePath = ResumePdf;
   //   saveAs(resumeFilePath, 'Rohit_Wagh_resume.pdf');
   // };
+  const [isAboutVisible, setIsAboutVisible] = useState(true)
 
   return (
     <div className='app' style={{height:'100vh', overflow:'hidden'}}>
@@ -40,7 +41,7 @@ function App() {
 
         <Navbar.Collapse className="justify-content-end">
            <div style={{display:"flex", justifyContent:'space-evenly', width:'30vw', alignItems:'center'}}>
-              <div className='li' onClick={()=>navigate('/about')}>about</div>
+              <div className={`li about ${isAboutVisible ? 'visible' : 'hidden'}`} onClick={()=>navigate('/about')} >about</div>
               <div className='li' onClick={()=> navigate('/sof')} > Services </div>
               <div className='li' onClick={()=>navigate('/project')}>Projects</div>
               {/* <div className='li' onClick={()=>navigate('/contact')}>Contact</div> */}

@@ -33,6 +33,10 @@ body{
     color: #fff;
 }
 
+
+
+
+
 .navbar span{
     font-weight: bold;
     color: #fff;
@@ -261,3 +265,40 @@ body{
         backdrop-filter: blur(4px);
       }
       
+
+
+      @media (max-width: 600px) {
+
+        body{
+          height: 100vh;
+        }
+          .welcome{
+            font-size: 0.9rem;
+            margin-top: 8rem !important;
+            margin-left: -90px;
+          }
+          .app{
+            width: 100vw !important;
+            background-image: url('/src/assets/backdround/rohit.jpg');
+            background-size: cover;
+        }
+        .navbar {
+            font-size: 14px; 
+        }
+      
+        .card {
+            width: 100% !important;
+        }
+
+        .navbar .li {
+          display: none;
+      }
+
+      .about.visible {
+        display: block;
+      }
+      
+      .about.hidden {
+        display: none;
+      }
+      }

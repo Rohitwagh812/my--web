@@ -9,7 +9,7 @@ function Home() {
     <div style={{overflow:"hidden"}}>
        <div style={{display:"flex", justifyContent:'center', alignItems:"center", height:"80vh", width:"100vw"}}>
             <div className='col-col' style={{ paddingLeft:10, marginLeft:30, width:'40.8vw', textAlign:"center"}}>
-               <div  style={{ marginTop:100}}>
+               <div className='welcome'  style={{ marginTop:100}}>
                   <span style={{fontSize:'500%', color:"#ff8c00"}}>H<span style={{fontSize:'80%'}}>i
                   </span>,</span>
                   <span style={{fontSize:'500%', color:"#ff8c00"}}>W<span style={{fontSize:'80%'}}>elcome</span></span>
