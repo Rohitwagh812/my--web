@@ -279,7 +279,7 @@ body{
           }
           .app{
             width: 100vw !important;
-            background-image: url('/src/assets/backdround/rohit.jpg');
+            background-image: url('/src/assets/backdround/rohit.png');
             background-size: cover;
         }
         .navbar {
