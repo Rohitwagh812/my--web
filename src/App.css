@@ -278,7 +278,7 @@ body{
             margin-left: -90px;
           }
           .app{
-            width: 100vw !important;
+            width: 100% !important;
             background-image: url('/src/assets/backdround/rohit.png');
             background-size: cover;
         }
