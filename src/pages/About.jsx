@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Button, Card, Col, Row } from 'react-bootstrap';
 
-import MyImage from '../assets/myImage/rohit.jpg';
+import MyImage from '../assets/myImage/rohit.png';
 
 import ResumePdf from '../assets/Resume/ROHIT RESUME.pdf';
 
@@ -66,7 +66,7 @@ function About() {
         </Col>
 
         <Col lg={4}>
-        <div style={{padding:50, color:'#fff'}} >
+        <div style={{padding:30, color:'#fff'}} >
                   <h5>
                     Age : 22
                   </h5>
@@ -74,7 +74,7 @@ function About() {
                     Gender : Male
                   </h5>
                   <h5>
-                    Languages : English, Hindi, Marathi
+                    Nationality : Indian
                   </h5>
                   <h5 >
                     Email : rohitwagh480@gmail.com
@@ -82,7 +82,7 @@ function About() {
                   <h5>
                     Skill : Java Software Developer
                   </h5>
-            {/* <div class="social-card">
+            <div class="social-card">
   <button class="Btn github">
     <span class="svgContainer">
       <svg height="1.6em" viewBox="0 0 496 512" fill="white">
@@ -142,7 +142,7 @@ function About() {
     </span>
     <span class="BG"></span>
   </button>
-            </div> */}
+            </div>
         </div>
         </Col>
       </Row>

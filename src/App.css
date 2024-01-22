@@ -159,7 +159,7 @@ body{
     .card-col-two{
       height: 70vh !important;
       width: 23vw !important;
-      /* transform: rotate(-5deg); */
+      transform:matrix3d();
       background-color: transparent;
       color: #26A69A;
      }
@@ -192,7 +192,7 @@ body{
       .social-card {
         height: fit-content;
         width: fit-content;
-        display: grid;
+        display: flex;
         align-items: center;
         justify-content: center;
         gap: 20px;
@@ -265,10 +265,23 @@ body{
         backdrop-filter: blur(4px);
       }
       
+      .pragrap{
+        width: 50vw;
+        text-align: center;
+        font-size: 19px;
+        color: #FF8A80;
+        /* style={{fontSize:19,color:'#FF8A80', marginTop:25, marginLeft:-150
+        }} */
+      }
 
 
       @media (max-width: 450px) {
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 
+}
         body{
           height: 100vh;
           width:100%;
@@ -278,13 +291,16 @@ body{
 
         .app {
           width: 100% !important;
+          height: auto;
           background-image: url('/src/assets/backdround/rohit.png'); 
+          overflow:visible;
           background-size: cover;
+          padding-bottom: 0;
         }
         
         .welcome {
           font-size: 0.9rem;
-          margin-top: 20rem !important;
+          margin-top: 5rem !important;
           margin-left: -7rem;
         }
         .navbar {
@@ -304,4 +320,22 @@ body{
       .about.hidden {
         display: none;
       }
+
+
+      .my-font-name{
+        font-size: 1.5rem;
+        width: 60vw !important;
+        margin-left: -4rem;
+        color: #4DB6AC !important;
+      }
+      .skill{
+        width: 100vw;
+        margin-left: -9rem;
+      }
+      .pragrap{
+        width: 100vw ;
+        /* margin-left: 1rem !important; */
+        text-align: justify;
+      }
+
       }

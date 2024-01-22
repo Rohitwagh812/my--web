@@ -17,10 +17,8 @@ function Home() {
                </div>
                 <div className='one'>
                 <h3 className='my-font-name'  style={{ fontWeight:'500',color:"#D81B60", marginTop:50}}>I`M ROHIT WAGH</h3>
-                <h5 style={{ marginTop:20 , color:'#FF80AB' ,marginTop:40}}>Front-End Developer | Java Software Designer And Developer | React Js Developer | Full Stack Development  </h5>
-                <p style={{
-                  width:'170%' ,textAlign:'justify', fontSize:19,color:'#FF8A80', marginTop:25, marginLeft:-150
-                }}>I am a passionate and creative front-end developer with a strong desire to bring digital ideas to life through code. With a focus on user experience and a keen eye for design, I strive to create beautiful and functional web applications that captivate and engage users.
+                <h5 className='skill' style={{ marginTop:20 , color:'#FF80AB' ,marginTop:40}}>Front-End Developer | Java Software Designer And Developer | React Js Developer | Full Stack Development  </h5>
+                <p className='pragrap'>I am a passionate and creative front-end developer with a strong desire to bring digital ideas to life through code. With a focus on user experience and a keen eye for design, I strive to create beautiful and functional web applications that captivate and engage users.
                 </p>
                 </div>
        </div>
