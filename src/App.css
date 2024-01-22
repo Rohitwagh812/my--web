@@ -159,7 +159,6 @@ body{
     .card-col-two{
       height: 70vh !important;
       width: 23vw !important;
-      transform:matrix3d();
       background-color: transparent;
       color: #26A69A;
      }
@@ -266,10 +265,12 @@ body{
       }
       
       .pragrap{
-        width: 50vw;
-        text-align: center;
+        width: 170%;
+        text-align: justify;
         font-size: 19px;
         color: #FF8A80;
+        margin-left: -150px;
+
         /* style={{fontSize:19,color:'#FF8A80', marginTop:25, marginLeft:-150
         }} */
       }
@@ -333,9 +334,7 @@ body{
         margin-left: -9rem;
       }
       .pragrap{
-        width: 100vw ;
-        /* margin-left: 1rem !important; */
-        text-align: justify;
+        display: none;
       }
 
       }
