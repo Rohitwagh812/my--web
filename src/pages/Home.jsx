@@ -7,7 +7,7 @@ import Gif from '../assets/git/Welcome.gif'
 function Home() {
   return (
     <div style={{overflow:"hidden"}}>
-       <div style={{display:"flex", justifyContent:'center', alignItems:"center", height:"80vh", width:"100vw"}}>
+       <div style={{display:"flex", justifyContent:'center', alignItems:"center", height:"85vh", width:"100vw"}}>
             <div className='col-col' style={{ paddingLeft:10, marginLeft:30, width:'40.8vw', textAlign:"center"}}>
                <div className='welcome'  style={{ marginTop:100}}>
                   <span style={{fontSize:'500%', color:"#ff8c00"}}>H<span style={{fontSize:'80%'}}>i

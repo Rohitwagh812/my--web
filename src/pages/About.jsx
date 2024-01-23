@@ -7,10 +7,27 @@ import MyImage from '../assets/myImage/rohit.png';
 import ResumePdf from '../assets/Resume/ROHIT RESUME.pdf';
 
 import { saveAs } from 'file-saver';
-
+import { useHref, useNavigate  } from 'react-router-dom'; 
 
 
 function About() {
+
+  const naviagte = useNavigate();
+
+  const handleDiscord = () => {
+    window.open('https://discord.com/channels/@me', '_blank');
+  }
+  const handleGithub = () => {
+    window.open('https://github.com/Rohitwagh812/', '_blank');
+  }
+
+
+  const handleLinkedIn = () => {
+    window.open('https://www.linkedin.com/in/rohit-web-developer/', '_blank');
+  }
+  const handleTwitter = () => {
+    window.open('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX', '_blank');
+  }
 
   const handleDownload = () => {
     const resumeFilePath = ResumePdf;
@@ -18,7 +35,8 @@ function About() {
   };
 
   return (
-    <div style={{ height:"100vh", padding:30, width:'100vw'}}>
+    <div className='about-page' > 
+    {/* style={{ height:"100vh", padding:30, width:'100vw'}} */}
       <Row>
         <Col lg={4} style={{display:"flex", justifyContent:"center"}}>
            <Card className='card-col'>
@@ -83,7 +101,7 @@ function About() {
                     Skill : Java Software Developer
                   </h5>
             <div class="social-card">
-  <button class="Btn github">
+  <button onClick={()=> handleGithub()} class="Btn github">
     <span class="svgContainer">
       <svg height="1.6em" viewBox="0 0 496 512" fill="white">
         <path
@@ -110,7 +128,7 @@ function About() {
     <span class="BG"></span>
   </button>
 
-  <button class="Btn linkdin">
+  <button onClick={()=>handleLinkedIn()} class="Btn linkdin">
     <span class="svgContainer">
       <svg
         fill="white"
@@ -127,7 +145,7 @@ function About() {
     <span class="BG"></span>
   </button>
 
-  <button class="Btn discord">
+  <button onClick={() =>handleDiscord()} className="Btn discord">
     <span class="svgContainer">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -146,6 +164,9 @@ function About() {
         </div>
         </Col>
       </Row>
+      <div className='powered-div'>
+        <p> Powered By Rohit Wagh </p>
+      </div>
     </div>
   )
 }

@@ -66,6 +66,13 @@ function App() {
 
       </Routes>
 
+      {/* <div className='footer-div'>
+          <div className='powered-div'> 
+            <p>Powered by Rohit Wagh </p>
+            <p></p>
+          </div>
+      </div> */}
+
     </div>
   )
 }
