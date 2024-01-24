@@ -352,17 +352,38 @@ body{
       .about-page{
         height: 100vh !important;
         width: 100vw !important;
-      }
-
-      .about-page{
-        height: 100vh ;
-        width: 100vw;
         overflow-y: scroll !important;
+        position: relative;
+        margin-top: 10px;
+      }
+      .row{
+        margin-top: 20px !important;
       }
       .card-col{
         width: 90vw !important;
         height: 55vh !important;
         /* padding: 10px !important; */
+      }
+
+      .col-one{
+        width: 80vw !important;
+      }
+      .card-col-two{
+        height: 39vh !important;
+        width: 80vw !important;
+        margin-top: 20px;
+      }
+
+      .card-col-two h2 {
+        color: #17DDB9;
+        margin-left: 3.5rem;
+        font-weight: bold;
+        position: absolute;
+        top: 1%;
+      }
+      .col-two{
+        padding: 20px;
+        height: 50vh !important;
       }
 
       }

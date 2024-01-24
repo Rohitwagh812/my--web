@@ -51,10 +51,10 @@ function About() {
          
 
         <Col lg={4} style={{display:"flex", justifyContent:"center"}} >
-            <div className='card-col-two align-items-start '>
+            <div className='card-col-two  '>
                   <h2 style={{textAlign:"center", width:'50vw'}}>ROHIT WAGH</h2>
 
-                 <div>
+                 <div className='col-one'>
                   <div style={{marginTop:20, textAlign:"justify"}}>
                   {/* <h5>
                   Name : Rohit Wagh 
@@ -84,7 +84,7 @@ function About() {
         </Col>
 
         <Col lg={4}>
-        <div style={{padding:30, color:'#fff'}} >
+        <div className='col-two' style={{padding:30, color:'#fff'}} >
                   <h5>
                     Age : 22
                   </h5>
