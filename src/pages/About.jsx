@@ -25,8 +25,8 @@ function About() {
   const handleLinkedIn = () => {
     window.open('https://www.linkedin.com/in/rohit-web-developer/', '_blank');
   }
-  const handleTwitter = () => {
-    window.open('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX', '_blank');
+  const handleWhatsapp = () => {
+    window.open('https://api.whatsapp.com/send/?phone=918788357199&text=hello', '_blank');
   }
 
   const handleDownload = () => {
@@ -112,7 +112,7 @@ function About() {
     <span class="BG"></span>
   </button>
 
-  <button class="Btn whatsapp">
+  <button onClick={()=> handleWhatsapp()} class="Btn whatsapp">
     <span class="svgContainer">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +165,7 @@ function About() {
         </Col>
       </Row>
       <div className='powered-div'>
-        <p> Powered By Rohit Wagh </p>
+        <p> Powered By KA Developer </p>
       </div>
     </div>
   )
