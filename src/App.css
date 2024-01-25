@@ -397,7 +397,7 @@ body{
         display: flex !important;
         justify-content: center;
         align-items: center;
-        bottom:0%;
+        bottom: -2%;
         position: absolute;
         /* z-index: -1% !important; */
 
