@@ -376,8 +376,9 @@ body{
         /* padding: 20px; */
       }
        .social-card{
-        margin-left: -0.6rem;
-       }
+       margin-left: 0.3rem;
+       gap: 30px;
+       } 
       .card-col-two h2 {
         color: #17DDB9;
         margin-left: 3.5rem;
