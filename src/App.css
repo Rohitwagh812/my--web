@@ -370,7 +370,7 @@ body{
         width: 80vw !important;
       }
       .card-col-two{
-        height: 40vh !important;
+        height: 34vh !important;
         width: 80vw !important;
         margin-top: 20px;
         /* padding: 20px; */
@@ -397,7 +397,7 @@ body{
         display: flex !important;
         justify-content: center;
         align-items: center;
-        bottom: -2%;
+        bottom: 0;
         position: absolute;
         /* z-index: -1% !important; */
 
