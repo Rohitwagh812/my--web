@@ -12,7 +12,7 @@ import { useHref, useNavigate  } from 'react-router-dom';
 
 function About() {
 
-  const naviagte = useNavigate();
+  const navigate = useNavigate();
 
   const handleDiscord = () => {
     window.open('https://discord.com/channels/@me', '_blank');
@@ -160,6 +160,13 @@ function About() {
     </span>
     <span class="BG"></span>
   </button>
+
+  
+            </div>
+            <div className='footer-div-main'> 
+            
+            <div className='li btn btn-dark ' onClick={()=> navigate('/sof')} > Services </div>
+              <div className='li btn btn-dark' onClick={()=>navigate('/project')}>Projects</div>
             </div>
         </div>
         </Col>

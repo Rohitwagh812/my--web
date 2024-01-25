@@ -50,7 +50,7 @@ function App() {
 
         <Navbar.Collapse className="justify-content-end">
            <div style={{display:"flex", justifyContent:'space-evenly', width:'30vw', alignItems:'center'}}>
-              <div className='li' onClick={()=>navigate('/about')} >about</div>
+              <div className='li about' onClick={()=>navigate('/about')} >about</div>
               <div className='li' onClick={()=> navigate('/sof')} > Services </div>
               <div className='li' onClick={()=>navigate('/project')}>Projects</div>
                
@@ -79,13 +79,12 @@ function App() {
          
       </Routes>
 
-      <div className='footer-div-main'>
-          {/* <div className='footer-div-head'>  */}
+      {/* <div className='footer-div-main'>
               <div className='li' onClick={()=>navigate('/about')} >about</div>
               <div className='li' onClick={()=> navigate('/sof')} > Services </div>
               <div className='li' onClick={()=>navigate('/project')}>Projects</div>
-          {/* </div> */}
-      </div>
+         
+      </div> */}
     </div>
   )
 }

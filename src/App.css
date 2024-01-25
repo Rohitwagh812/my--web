@@ -327,8 +327,8 @@ body{
           display: none;
       }
 
-      .about.visible {
-        display: block;
+      .about {
+        display: block !important;
       }
       
       .about.hidden {
@@ -355,7 +355,7 @@ body{
         width: 100vw !important;
         overflow-y: scroll !important;
         position: relative;
-        margin-top: 10px;
+        /* margin-top: 10px; */
       }
       .row{
         margin-top: 20px !important;
@@ -390,16 +390,9 @@ body{
         height: 50vh !important;
       }
       .footer-div-main{
-        /* display: block !important; */
-        background-color: #00000067;
-        height: 6vh;
-        width: 100vw;
         display: flex !important;
         justify-content: center;
         align-items: center;
-        bottom: 0;
-        position: absolute;
-        /* z-index: -1% !important; */
 
       }
 
@@ -414,10 +407,6 @@ body{
     .li:hover{
         border-bottom: 2px solid ;
         color: #00ACC1;
-    }
-
-    .menu-div{
-      display: block !important;
     }
 
       }
