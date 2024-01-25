@@ -166,7 +166,7 @@ function About() {
       </Row>
       <div className='powered-div'>
         <p> Powered By KA Developer </p>
-      </div>
+      </div> 
     </div>
   )
 }

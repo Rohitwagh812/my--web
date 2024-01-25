@@ -1,5 +1,5 @@
 import { Route, Routes, useNavigate } from 'react-router-dom';
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import {Navbar} from 'react-bootstrap'
 import { saveAs } from 'file-saver';
@@ -23,10 +23,19 @@ function App() {
   //   saveAs(resumeFilePath, 'Rohit_Wagh_resume.pdf');
   // };
   const [isAboutVisible, setIsAboutVisible] = useState(true)
+  const [display , setDisplay] = useState(false)
+
+  const handleScroll = () => {
+   console.log('hello')
+  }
+
+  useEffect(()=>{
+     
+  },[])
 
   return (
     <div className='app' style={{height:'100vh', overflow:'hidden'}}>
-      <Navbar bg='dark' variant='dark' className='navbar'>
+      <Navbar bg='dark' variant='dark' className='navbar' >
 
         <Navbar.Brand style={{cursor:"pointer"}} > 
         <img 
@@ -41,15 +50,19 @@ function App() {
 
         <Navbar.Collapse className="justify-content-end">
            <div style={{display:"flex", justifyContent:'space-evenly', width:'30vw', alignItems:'center'}}>
-              <div className={`li about ${isAboutVisible ? 'visible' : 'hidden'}`} onClick={()=>navigate('/about')} >about</div>
+              <div className='li' onClick={()=>navigate('/about')} >about</div>
               <div className='li' onClick={()=> navigate('/sof')} > Services </div>
               <div className='li' onClick={()=>navigate('/project')}>Projects</div>
-              {/* <div className='li' onClick={()=>navigate('/contact')}>Contact</div> */}
+               
            </div>
         </Navbar.Collapse>
-
       </Navbar>
+{/* <div className='footer-div-main'>
+              <div className='li' onClick={()=> navigate('/sof')} > Services </div>
+              <div className='li' onClick={()=>navigate('/project')}>Projects</div>
+      </div> */}
 
+      
       <Routes>
 
          <Route path='/' element={<Home/>}/>
@@ -63,16 +76,16 @@ function App() {
          <Route path='/user' element={<UserData/>}/>
 
          <Route path='/contact' element={<Contact/>}/>
-
+         
       </Routes>
 
-      {/* <div className='footer-div'>
-          <div className='powered-div'> 
-            <p>Powered by Rohit Wagh </p>
-            <p></p>
-          </div>
-      </div> */}
-
+      <div className='footer-div-main'>
+          {/* <div className='footer-div-head'>  */}
+              <div className='li' onClick={()=>navigate('/about')} >about</div>
+              <div className='li' onClick={()=> navigate('/sof')} > Services </div>
+              <div className='li' onClick={()=>navigate('/project')}>Projects</div>
+          {/* </div> */}
+      </div>
     </div>
   )
 }
