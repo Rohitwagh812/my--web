@@ -163,11 +163,11 @@ function About() {
 
   
             </div>
-            <div className='footer-div-main'> 
+            <footer className='footer-div-main'> 
             
             <div className='li btn btn-dark ' onClick={()=> navigate('/sof')} > Services </div>
               <div className='li btn btn-dark' onClick={()=>navigate('/project')}>Projects</div>
-            </div>
+            </footer>
         </div>
         </Col>
       </Row>

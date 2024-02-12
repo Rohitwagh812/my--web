@@ -12,10 +12,36 @@ import BackImg from '../src/assets/backdround/backImage.jpg'
 import Services from './pages/Services';
 import UserData from './pages/UserData';
 import Contact from './pages/Contact';
+// import Signin from './pages/Signin';
+import SignUp from './pages/SignUp';
+import SignIn from './pages/SignIn';
+import { onAuthStateChanged } from 'firebase/auth';
+import { auth } from './firebase';
 
 
 
 function App() {
+
+  const [docTitle, setDocTitle] = useState(document.title);
+
+  useEffect(() => {
+    const handleBlur = () => {
+      document.title = 'Come Back 😯';
+    };
+
+    const handleFocus = () => {
+      document.title = docTitle;
+    };
+
+    window.addEventListener('blur', handleBlur);
+    window.addEventListener('focus', handleFocus);
+
+    // Cleanup function to remove event listeners when component unmounts
+    return () => {
+      window.removeEventListener('blur', handleBlur);
+      window.removeEventListener('focus', handleFocus);
+    };
+  }, [docTitle]);
 
   const navigate = useNavigate()
   // const handleDownload = () => {
@@ -32,6 +58,20 @@ function App() {
   useEffect(()=>{
      
   },[])
+
+  
+   const handleWebServices = function(){
+    onAuthStateChanged(auth , (user)=>{
+      if(user){
+        navigate('/web/service')
+        console.log('user is logged in ')
+      }else{
+        navigate('/login')
+        console.log('user is logged out')
+      }
+    })
+
+   }
 
   return (
     <div className='app' style={{height:'100vh', overflow:'hidden'}}>
@@ -51,7 +91,7 @@ function App() {
         <Navbar.Collapse className="justify-content-end">
            <div style={{display:"flex", justifyContent:'space-evenly', width:'30vw', alignItems:'center'}}>
               <div className='li about' onClick={()=>navigate('/about')} >about</div>
-              <div className='li' onClick={()=> navigate('/sof')} > Services </div>
+              <div className='li' onClick={()=> handleWebServices()} > Services </div>
               <div className='li' onClick={()=>navigate('/project')}>Projects</div>
                
            </div>
@@ -71,11 +111,15 @@ function App() {
 
          <Route path='/about' element={<About/>}/>
 
-         <Route path='/sof' element={<Services/>}/>
+         <Route path='/web/service' element={<Services/>}/>
 
          <Route path='/user' element={<UserData/>}/>
 
          <Route path='/contact' element={<Contact/>}/>
+
+         <Route path='/register' element={<SignUp/>}/>
+
+         <Route path='/login' element={<SignIn/>}/>
          
       </Routes>
 
